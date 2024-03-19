@@ -56,7 +56,7 @@ const MyPostCard = ({ picturePath }) => {
       formData.append("picturePath", image.name);
     }
 
-    const response = await fetch(`http://localhost:6001/posts`, {
+    const response = await fetch(`https://socialmediaapp-iedb.onrender.com/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,

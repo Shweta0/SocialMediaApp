@@ -15,7 +15,7 @@ const UserProfileImage = ({ image, size = "100px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`http://localhost:6001/assets/${image}`}
+        src={`https://socialmediaapp-iedb.onrender.com/assets/${image}`}
       />
     </Box>
   );

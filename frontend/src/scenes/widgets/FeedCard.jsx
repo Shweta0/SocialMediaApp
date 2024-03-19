@@ -39,7 +39,7 @@ const FeedCard = ({
   const primary = palette.primary.main;
 
   const patchLike = async () => {
-    const response = await fetch(`http://localhost:6001/posts/${postId}/like`, {
+    const response = await fetch(`https://socialmediaapp-iedb.onrender.com/posts/${postId}/like`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ const FeedCard = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem"}}
-          src={`http://localhost:6001/assets/${picturePath}`}
+          src={`https://socialmediaapp-iedb.onrender.com/assets/${picturePath}`}
         />
       )}
 
